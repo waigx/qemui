@@ -12,6 +12,9 @@
 		447EA8E8244500BC0039D846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447EA8E7244500BC0039D846 /* Assets.xcassets */; };
 		447EA8EB244500BC0039D846 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447EA8EA244500BC0039D846 /* Preview Assets.xcassets */; };
 		447EA8EE244500BC0039D846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 447EA8EC244500BC0039D846 /* Main.storyboard */; };
+		447EAA4A244502900039D846 /* qemu in Resources */ = {isa = PBXBuildFile; fileRef = 447EAA49244502900039D846 /* qemu */; };
+		447EAA4C24452C4A0039D846 /* ImageLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EAA4B24452C4A0039D846 /* ImageLayer.swift */; };
+		447EAA4F2445422B0039D846 /* ImageSizeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EAA4E2445422B0039D846 /* ImageSizeSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		447EA8ED244500BC0039D846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		447EA8EF244500BC0039D846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		447EA8F0244500BC0039D846 /* qemui.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = qemui.entitlements; sourceTree = "<group>"; };
+		447EAA49244502900039D846 /* qemu */ = {isa = PBXFileReference; lastKnownFileType = folder; path = qemu; sourceTree = "<group>"; };
+		447EAA4B24452C4A0039D846 /* ImageLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLayer.swift; sourceTree = "<group>"; };
+		447EAA4E2445422B0039D846 /* ImageSizeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSizeSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 		447EA8D7244500BA0039D846 = {
 			isa = PBXGroup;
 			children = (
+				447EAA4D24452E6F0039D846 /* Image */,
 				447EA8E2244500BA0039D846 /* qemui */,
 				447EA8E1244500BA0039D846 /* Products */,
 			);
@@ -55,6 +62,7 @@
 		447EA8E2244500BA0039D846 /* qemui */ = {
 			isa = PBXGroup;
 			children = (
+				447EAA49244502900039D846 /* qemu */,
 				447EA8E3244500BA0039D846 /* AppDelegate.swift */,
 				447EA8E5244500BA0039D846 /* ContentView.swift */,
 				447EA8E7244500BC0039D846 /* Assets.xcassets */,
@@ -72,6 +80,15 @@
 				447EA8EA244500BC0039D846 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		447EAA4D24452E6F0039D846 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				447EAA4B24452C4A0039D846 /* ImageLayer.swift */,
+				447EAA4E2445422B0039D846 /* ImageSizeSlider.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				447EAA4A244502900039D846 /* qemu in Resources */,
 				447EA8EE244500BC0039D846 /* Main.storyboard in Resources */,
 				447EA8EB244500BC0039D846 /* Preview Assets.xcassets in Resources */,
 				447EA8E8244500BC0039D846 /* Assets.xcassets in Resources */,
@@ -145,8 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				447EAA4F2445422B0039D846 /* ImageSizeSlider.swift in Sources */,
 				447EA8E6244500BA0039D846 /* ContentView.swift in Sources */,
 				447EA8E4244500BA0039D846 /* AppDelegate.swift in Sources */,
+				447EAA4C24452C4A0039D846 /* ImageLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

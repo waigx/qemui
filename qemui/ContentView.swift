@@ -9,9 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showingSheet = false
+
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        VStack {
+            Text("Hello, World!")
+                .frame(width: 500, height: 500)
+
+            Button(action:{
+                self.showingSheet.toggle()
+            }){
+                Text("123")
+            }.sheet(isPresented: $showingSheet) {
+                ImageLayer()
+            }
+        }
     }
 }
 
